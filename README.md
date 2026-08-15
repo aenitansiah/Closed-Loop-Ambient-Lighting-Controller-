@@ -200,7 +200,7 @@ int error = desiredlightlevel - ldrValue;
 Therefore:
 
 [
-\text{Error} = \text{Desired illumination} - \text{Measured illumination}
+Error = Desired illumination - Measured illumination
 ]
 
 The sign of the error determines the direction of the correction.
@@ -322,7 +322,6 @@ if (pwmValue < 0) {
 
 This prevents the controller from producing values outside the valid PWM range.
 
----
 
 ## Control Algorithm
 
@@ -593,9 +592,6 @@ Potential improvements include:
 
 * Implementing proportional control.
 * Developing a full PID controller.
-* Calibrating the LDR against measured illumination.
-* Reducing oscillation around the desired illumination.
-* Introducing a tolerance/deadband around zero error.
 * Improving the mapping between sensor readings and illumination.
 * Adding a second LED or higher-power lighting output.
 * Adding a display showing the desired and measured illumination.
