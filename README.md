@@ -4,7 +4,6 @@ A closed-loop embedded lighting control system that uses an LDR for ambient ligh
 
 [INSERT IMAGE: Final completed system]
 
----
 
 # System Variables & Nomenclature:
 
@@ -32,7 +31,6 @@ The objectives of this project were to:
 * Implement output constraints so the PWM value remains within the valid 0–255 range.
 * Develop an understanding of closed-loop feedback control using a physical embedded system.
 
----
 
 ## System Concept
 
@@ -84,7 +82,6 @@ The final system operates as:
 
 This transforms the project from a simple sensor-controlled LED into a **closed-loop feedback control system**.
 
----
 
 ## Hardware
 
@@ -103,7 +100,6 @@ The complete hardware used was:
 
 [INSERT IMAGE: All hardware used in the project]
 
----
 
 ## LDR Light Measurement
 
@@ -145,7 +141,6 @@ This allows the user to effectively specify:
 
 [INSERT IMAGE: Potentiometer connected to Arduino]
 
----
 
 ## Desired Illumination
 
@@ -193,7 +188,6 @@ Casting the potentiometer value to `long` prevented the overflow:
 
 This was an important debugging exercise because the individual ADC reading was valid; the error occurred during the subsequent mathematical operation.
 
----
 
 ## Error Calculation
 
@@ -259,7 +253,6 @@ Error = 0
 
 No brightness correction is required.
 
----
 
 ## PWM Control
 
@@ -292,7 +285,6 @@ analogWrite(10, pwmValue);
 
 [INSERT IMAGE: LED connected to PWM pin]
 
----
 
 ## Error-Based Correction
 
@@ -353,7 +345,6 @@ The overall control process can be summarised as:
 
 This process repeats continuously inside the Arduino's `loop()` function.
 
----
 
 ## Arduino Implementation
 
@@ -378,7 +369,6 @@ This was necessary because the PWM value represents the controller's current sta
 
 Declaring it inside a conditional statement would create a local variable rather than maintaining the same PWM state throughout the program.
 
----
 
 ## Testing & Validation
 
@@ -418,7 +408,6 @@ and the PWM decreased towards:
 
 [INSERT IMAGE: Serial Monitor showing changing potentiometer values]
 
----
 
 ### LDR Test
 
@@ -434,7 +423,6 @@ A light source was also placed near the sensor to observe the response to increa
 
 [INSERT IMAGE: Light source illuminating LDR]
 
----
 
 ## Serial Monitor
 
@@ -462,7 +450,6 @@ The Serial Monitor was particularly useful for identifying mathematical and prog
 
 [INSERT IMAGE: Final Serial Monitor output]
 
----
 
 ## Problems Encountered & Debugging
 
@@ -478,7 +465,6 @@ This caused errors such as:
 
 The issue was resolved by declaring the variable outside the conditional logic so that it could persist across iterations of the main loop.
 
----
 
 ### 2. Incorrect `else` Syntax
 
@@ -486,7 +472,6 @@ An incorrect `else` structure was initially used when checking for zero error.
 
 The control logic was simplified so that positive and negative error conditions were handled independently, while zero error naturally resulted in no correction.
 
----
 
 ### 3. Potentiometer Debugging
 
@@ -502,7 +487,6 @@ This confirmed that the potentiometer was functioning correctly and producing va
 
 This demonstrated the importance of **isolating individual hardware components during debugging**.
 
----
 
 ### 4. Integer Overflow
 
@@ -526,7 +510,6 @@ The issue was resolved by using a larger integer type for the intermediate calcu
 
 The same principle was applied to the correction calculation.
 
----
 
 ## Final System Behaviour
 
@@ -562,7 +545,6 @@ LED brightness decreases
 
 The controller therefore allows the user to select a desired illumination level while the LDR continuously provides information about the actual environment.
 
----
 
 ## Engineering Analysis
 
@@ -595,7 +577,6 @@ The project therefore introduced practical concepts including:
 * Integer overflow
 * State variables
 
----
 
 ## Limitations
 
@@ -605,7 +586,6 @@ It does not yet implement a full PID controller.
 
 As a result, depending on the environment and selected setpoint, the system may not settle perfectly at zero error and may require further tuning to improve stability and responsiveness.
 
----
 
 ## Future Improvements
 
@@ -622,7 +602,6 @@ Potential improvements include:
 * Logging sensor data for analysis.
 * Implementing the controller on an FPGA using VHDL/RTL.
 
----
 
 ## Skills Demonstrated
 
@@ -669,7 +648,6 @@ Potential improvements include:
 * Mapping different numerical scales
 * Iterative system development
 
----
 
 ## Project Development Journey
 
@@ -714,7 +692,6 @@ Desired Illumination
 
 This progression provided a practical introduction to **embedded feedback control** and establishes a foundation for more advanced control and digital hardware projects.
 
----
 
 ## Final Demonstration
 
