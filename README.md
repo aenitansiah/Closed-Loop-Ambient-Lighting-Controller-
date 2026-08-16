@@ -121,7 +121,6 @@ I performed an initial test to determine the range that the LDR was operating at
 
 [INSERT IMAGE: LDR potential-divider circuit]
 
----
 
 ## Potentiometer as the User Setpoint
 
