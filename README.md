@@ -117,6 +117,8 @@ A0
 
 The Arduino therefore produced a raw sensor value within its ADC range.
 
+I performed an initial test to determine the range that the LDR was operating at. I covered the LDR and noted the reading down (0). I shone a flashlight over the LDR and wrote down the reading (817) and finally I wrote down the value that the LDR remained at (576). This process allowed me to determine the LDR's operating range which was 0-817.
+
 [INSERT IMAGE: LDR potential-divider circuit]
 
 ---
