@@ -98,7 +98,7 @@ The complete hardware used was:
 | Breadboard        | Circuit construction                |
 | Jumper wires      | Electrical connections              |
 
-[INSERT IMAGE: All hardware used in the project]
+![Hardware](Images/Hardware.png)
 
 
 ## LDR Light Measurement
@@ -119,7 +119,7 @@ The Arduino therefore produced a raw sensor value within its ADC range.
 
 I performed an initial test to determine the range that the LDR was operating at. I covered the LDR and noted the reading down (0). I shone a flashlight over the LDR and wrote down the reading (817) and finally I wrote down the value that the LDR remained at (576). This process allowed me to determine the LDR's operating range which was 0-817.
 
-[INSERT IMAGE: LDR potential-divider circuit]
+![LDR Potential Divider](Images/LDR_Potential_Divider.png)
 
 
 ## Potentiometer as the User Setpoint
@@ -140,7 +140,7 @@ This allows the user to effectively specify:
 
 > "This is the level of ambient illumination I want the system to maintain."
 
-[INSERT IMAGE: Potentiometer connected to Arduino]
+![Potentiometer to Arduino](Images/Potentiometer_Arduino.png)
 
 
 ## Desired Illumination
@@ -284,7 +284,7 @@ The final output was generated using:
 analogWrite(10, pwmValue);
 ```
 
-[INSERT IMAGE: LED connected to PWM pin]
+![LED to PWM](Images/LED_PWM_pin.png)
 
 
 ## Error-Based Correction
@@ -406,7 +406,7 @@ and the PWM decreased towards:
 0
 ```
 
-[INSERT IMAGE: Serial Monitor showing changing potentiometer values]
+[INSERT IMAGE: Serial Monitor showing changing potentiometer values] - video 
 
 
 ### LDR Test
@@ -421,7 +421,7 @@ A light source was also placed near the sensor to observe the response to increa
 
 [INSERT IMAGE: LDR covered during testing]
 
-[INSERT IMAGE: Light source illuminating LDR]
+[INSERT IMAGE: Light source illuminating LDR] - video
 
 
 ## Serial Monitor
@@ -448,7 +448,7 @@ PWM: 0
 
 The Serial Monitor was particularly useful for identifying mathematical and programming errors during development.
 
-[INSERT IMAGE: Final Serial Monitor output]
+![Final Serial Monitor Output](Images/Final_Serial_Monitor_Output.png)
 
 
 ## Problems Encountered & Debugging
@@ -690,17 +690,11 @@ Desired Illumination
 This progression provided a practical introduction to **embedded feedback control** and establishes a foundation for more advanced control and digital hardware projects.
 
 
-## Final Demonstration
+## Final Set-up
 
-[INSERT IMAGE: Final completed project]
+![Final Circuit](Images/Final_Circuit.png)
 
-[INSERT IMAGE: Final breadboard circuit]
-
-[INSERT IMAGE: Potentiometer and LDR]
-
-[INSERT IMAGE: LED operating at different brightness levels]
-
-[INSERT VIDEO: Final closed-loop ambient lighting controller demonstration]
+![Breadboard Circuit](Images/Final_Circuit_2.png)
 
 ## Conclusion
 
