@@ -284,7 +284,7 @@ analogWrite(10, pwmValue);
 
 ![LED to PWM](Images/LED_PWM_pin.png)
 
-**LED operating at different brightness levels**[Watch the video](https://youtube.com/shorts/F8WJ5LutvkU?feature=share)
+**LED operating at different brightness levels** [Watch the video](https://youtube.com/shorts/F8WJ5LutvkU?feature=share)
 
 ## Error-Based Correction
 
@@ -405,7 +405,7 @@ and the PWM decreased towards:
 0
 ```
 
-**Potentiometer Changing Values**[Watch the video](https://youtube.com/shorts/AuaIwTohmhY?feature=share)
+**Potentiometer Changing Values** [Watch the video](https://youtube.com/shorts/AuaIwTohmhY?feature=share)
 
 
 ### LDR Test
@@ -419,7 +419,7 @@ Covering the LDR changed the measured light level and caused the controller to a
 A light source was also placed near the sensor to observe the response to increased illumination.
 
 
-**Project Demonstration**[Watch the video](https://youtube.com/shorts/PrqWZVrqvLQ?feature=share) - video
+**Project Demonstration** [Watch the video](https://youtube.com/shorts/PrqWZVrqvLQ?feature=share) 
 
 
 ## Serial Monitor
