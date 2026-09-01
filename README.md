@@ -2,8 +2,6 @@
 # Project Overview:
 A closed-loop embedded lighting control system that uses an LDR for ambient light measurement and a potentiometer for user-defined illumination, with error -based PWM control of LED brightness.
 
-[INSERT IMAGE: Final completed system]
-
 
 # System Variables & Nomenclature:
 
@@ -286,6 +284,7 @@ analogWrite(10, pwmValue);
 
 ![LED to PWM](Images/LED_PWM_pin.png)
 
+**LED operating at different brightness levels**[Watch the video](https://youtube.com/shorts/F8WJ5LutvkU?feature=share)
 
 ## Error-Based Correction
 
@@ -406,7 +405,7 @@ and the PWM decreased towards:
 0
 ```
 
-[INSERT IMAGE: Serial Monitor showing changing potentiometer values] - video 
+**Potentiometer Changing Values**[Watch the video](https://youtube.com/shorts/AuaIwTohmhY?feature=share)
 
 
 ### LDR Test
@@ -419,9 +418,8 @@ Covering the LDR changed the measured light level and caused the controller to a
 
 A light source was also placed near the sensor to observe the response to increased illumination.
 
-[INSERT IMAGE: LDR covered during testing]
 
-[INSERT IMAGE: Light source illuminating LDR] - video
+**Project Demonstration**[Watch the video](https://youtube.com/shorts/PrqWZVrqvLQ?feature=share) - video
 
 
 ## Serial Monitor
